@@ -78,7 +78,7 @@ initrd versions might differ. I did this to work around video
 garbage issues.
 
 
-/nutanix/vfat//EFI/BOOT/grub.cfg:
+/nutanix_vfat/EFI/BOOT/grub.cfg:
 
 ```
 set default="1"
@@ -107,7 +107,6 @@ menuentry 'Nutanix Community Edition AHV (4.4.77-1.el7.nutanix.20190211.279.x86_
     initrdefi /boot/initramfs-4.4.77-1.el7.nutanix.20190211.279.x86_64.img
 }
 ```
-
 
 Umount everything, remove the loopback mappings and enjoy booting
 nutanix AHV installer from UEFI BIOS without legacy mode.
